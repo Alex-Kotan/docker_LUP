@@ -7,5 +7,4 @@ RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /home/git/boxfuse-sample-java-war-hello
 RUN mvn package
 RUN cp target/*.war /usr/local/tomcat/webapps/
-CMD ["catalina.sh","run"]
 EXPOSE 8080
